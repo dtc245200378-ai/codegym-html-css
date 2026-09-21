@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực hành Nhúng CSS vào HTML</title>
+
+    <!-- Phần 3: External Style (Liên kết file CSS bên ngoài) -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Phần 2: Internal Style (Thẻ <style> trong phần <head>) -->
+    <style>
+        .internal-title {
+            color: #007bff; /* Màu xanh dương */
+        }
+        .internal-text {
+            color: #6c757d; /* Màu xám */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Luyện tập Nhúng CSS vào Trang HTML</h1>
+
+    <!-- Phần 1: Inline Style (Nhúng trực tiếp vào thẻ HTML) -->
+    <section>
+        <h2>Phần 1: Inline Style</h2>
+        <h3 style="color: #dc3545;">Tiêu đề Inline CSS</h3>
+        <p style="color: #fd7e14;">Đoạn văn bản được đổi màu bằng thuộc tính style trực tiếp trong thẻ.</p>
+    </section>
+
+    <hr>
+
+    <!-- Phần 2: Internal Style -->
+    <section>
+        <h2>Phần 2: Internal Style</h2>
+        <h3 class="internal-title">Tiêu đề Internal CSS</h3>
+        <p class="internal-text">Đoạn văn bản được đổi màu qua thẻ &lt;style&gt; ở phần &lt;head&gt;.</p>
+    </section>
+
+    <hr>
+
+    <!-- Phần 3: External Style -->
+    <section>
+        <h2>Phần 3: External Style</h2>
+        <h3 class="external-title">Tiêu đề External CSS</h3>
+        <p class="external-text">Đoạn văn bản được đổi màu bằng tệp style.css bên ngoài.</p>
+    </section>
+
+</body>
+</html>
