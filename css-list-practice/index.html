@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực hành Danh sách trong CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        /* 1. Kiểu ký hiệu danh sách (list-style-type) */
+        ul.circle-list {
+            list-style-type: circle;
+        }
+        ul.square-list {
+            list-style-type: square;
+        }
+        ol.roman-list {
+            list-style-type: upper-roman;
+        }
+
+        /* 2. Vị trí ký hiệu (list-style-position) */
+        ul.position-inside {
+            list-style-position: inside;
+            background-color: #f8f9fa;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        ul.position-outside {
+            list-style-position: outside;
+            background-color: #e9ecef;
+            padding: 10px 30px;
+            border: 1px solid #ccc;
+        }
+
+        /* 3. Thuộc tính rút gọn (list-style shorthand) */
+        ul.shorthand-list {
+            list-style: square inside;
+        }
+
+        /* 4. Định kiểu màu sắc cho danh sách */
+        ol.colored-list {
+            background: #ffe6e6;
+            padding: 20px 40px;
+            border-radius: 5px;
+        }
+        ol.colored-list li {
+            color: #cc0000;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Thực hành Định kiểu Danh sách trong CSS</h1>
+
+    <h2>1. Đánh dấu mục danh sách khác nhau (list-style-type)</h2>
+    <ul class="circle-list">
+        <li>Mục 1 (Hình tròn rỗng)</li>
+        <li>Mục 2 (Hình tròn rỗng)</li>
+    </ul>
+    <ul class="square-list">
+        <li>Mục 1 (Hình vuông)</li>
+        <li>Mục 2 (Hình vuông)</li>
+    </ul>
+    <ol class="roman-list">
+        <li>Mục I (Chữ số La Mã)</li>
+        <li>Mục II (Chữ số La Mã)</li>
+    </ol>
+
+    <h2>2. Vị trí đánh dấu (list-style-position)</h2>
+    <p><b>Inside</b> (Ký hiệu nằm bên trong dòng nội dung):</p>
+    <ul class="position-inside">
+        <li>Phần tử danh sách 1</li>
+        <li>Phần tử danh sách 2</li>
+    </ul>
+
+    <p><b>Outside</b> (Ký hiệu nằm bên ngoài - Mặc định):</p>
+    <ul class="position-outside">
+        <li>Phần tử danh sách 1</li>
+        <li>Phần tử danh sách 2</li>
+    </ul>
+
+    <h2>3. Thuộc tính rút gọn (list-style)</h2>
+    <ul class="shorthand-list">
+        <li>Sử dụng thuộc tính list-style kết hợp kiểu vuông và vị trí inside</li>
+        <li>Giúp viết CSS gọn gàng hơn</li>
+    </ul>
+
+    <h2>4. Định kiểu danh sách với màu sắc</h2>
+    <ol class="colored-list">
+        <li>Mục màu đỏ 1</li>
+        <li>Mục màu đỏ 2</li>
+        <li>Mục màu đỏ 3</li>
+    </ol>
+
+</body>
+</html>
