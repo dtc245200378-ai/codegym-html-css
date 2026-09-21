@@ -1,0 +1,113 @@
+/* Reset CSS */
+html, body, h1, h2, h3, h4, ul, ol, li, p, a {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f6f8;
+    color: #333333;
+    padding: 30px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #000000;
+    font-size: 32px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #440000;
+}
+
+/* Nav Menu */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    background-color: #440000;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+.nav-menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 3px;
+    transition: background-color 0.2s;
+}
+
+.nav-menu li a:hover {
+    background-color: #660000;
+}
+
+h2 {
+    color: #000000;
+    font-size: 22px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    padding: 8px 12px;
+    background-color: #e2e8f0;
+    border-left: 5px solid #440000;
+}
+
+h3 {
+    color: #333333;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+p {
+    color: #444444;
+    margin-bottom: 12px;
+}
+
+a {
+    color: #440000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.content-list {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.content-list li {
+    margin-bottom: 6px;
+}
+
+/* Tour Dates */
+.tour-list {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.tour-list li {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.tour-list li p {
+    margin-bottom: 4px;
+}
+
+.tour-list li p:first-child {
+    font-weight: bold;
+    color: #111111;
+}
