@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+}
+
+/* Header */
+.header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Thanh điều hướng */
+.topnav {
+    background-color: #34495e;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.topnav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.topnav a:hover {
+    background-color: #1abc9c;
+    color: white;
+}
+
+/* Bố cục chính sử dụng Flexbox */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    gap: 15px;
+}
+
+.column {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Độ rộng mặc định trên Desktop */
+.column.side {
+    flex: 25%;
+}
+
+.column.middle {
+    flex: 50%;
+}
+
+/* Footer */
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+/* Responsive cho Mobile và Tablet */
+@media (max-width: 768px) {
+    .topnav {
+        flex-direction: column;
+    }
+
+    .topnav a {
+        width: 100%;
+        text-align: left;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .column.side, .column.middle {
+        flex: 100%;
+    }
+}
