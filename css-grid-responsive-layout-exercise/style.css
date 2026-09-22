@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 15px;
+}
+
+/* Lưới chính CSS Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "content sidebar"
+        "footer footer";
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 95vh;
+}
+
+/* Định dạng từng vùng */
+.header {
+    grid-area: header;
+    background-color: #2c3e50;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: #34495e;
+    border-radius: 5px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.nav ul li a:hover {
+    background-color: #1abc9c;
+    border-radius: 5px;
+}
+
+.content {
+    grid-area: content;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.content h2 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #e8f8f5;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #a3e4d7;
+}
+
+.sidebar h3 {
+    margin-bottom: 10px;
+    color: #16a085;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Responsive cho Mobile */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "nav"
+            "content"
+            "sidebar"
+            "footer";
+    }
+
+    .nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}
