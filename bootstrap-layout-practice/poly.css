@@ -1,0 +1,60 @@
+header {
+    position: relative;
+    background-color: #0d5ca7;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.shopping-mall {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-variant: small-caps;
+    z-index: 2;
+}
+
+.shopping-mall > h1 {
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 45px;
+    color: white;
+    letter-spacing: 0.3px;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
+    padding-bottom: 0px;
+    border-bottom: 1px dotted gray;
+    margin: 0px;
+}
+
+.shopping-mall > h5 {
+    margin-top: 5px;
+    letter-spacing: 0.5px;
+    color: #e2e2e2;
+}
+
+.poly-cart {
+    margin-top: 5px;
+}
+
+.poly-cart ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    font-variant: small-caps;
+}
+
+.poly-cart .panel-heading strong {
+    font-variant: small-caps;
+    font-size: larger;
+    text-shadow: 0 0 2px darkgray;
+}
+
+.poly-prod {
+    text-align: center;
+    padding: 5px;
+}
+
+.poly-prod .panel-body img {
+    height: 150px;
+    max-width: 95%;
+    object-fit: contain;
+}
