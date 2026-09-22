@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: $bg-color;
+  color: $text-color;
+  line-height: 1.6;
+}
+
+.header {
+  background-color: $primary-color;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-bottom: 30px;
+}
