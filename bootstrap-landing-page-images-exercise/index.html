@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page với Bootstrap và Hình Ảnh</title>
+    <!-- Nhúng CSS Bootstrap 5 CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Nhúng Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <!-- 1. Header / Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="#"><i class="bi bi-rocket-takeoff-fill me-2"></i>TechLanding</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#landingNav" aria-controls="landingNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="landingNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Trang Chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Giới Thiệu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Tính Năng</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cta">Đăng Ký</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. Banner / Hero Section -->
+    <header class="bg-dark text-white text-center py-5 position-relative overflow-hidden" style="background: linear-gradient(135deg, #0d6efd 0%, #0b2239 100%);">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="display-3 fw-bold mb-3">Nâng Tầm Doanh Nghiệp Của Bạn</h1>
+                    <p class="lead mb-4 fs-4 text-light">Giải pháp công nghệ toàn diện giúp tối ưu hiệu suất và tăng trưởng doanh thu nhanh chóng.</p>
+                    <a href="#cta" class="btn btn-warning btn-lg fw-bold px-4 py-3 shadow">Khám Phá Ngay <i class="bi bi-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. Section Giới Thiệu (Ảnh + Mô tả sản phẩm) -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container py-4">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&auto=format&fit=crop" alt="Giới thiệu sản phẩm" class="img-fluid rounded-4 shadow-lg border">
+                </div>
+                <div class="col-lg-6">
+                    <span class="badge bg-primary-subtle text-primary mb-2 px-3 py-2 rounded-pill fs-6">Về Sản Phẩm</span>
+                    <h2 class="display-6 fw-bold mb-3 text-dark">Giao Diện Đột Phá & Linh Hoạt</h2>
+                    <p class="text-secondary fs-5 mb-4">
+                        Nền tảng của chúng tôi được thiết kế đáp ứng hoàn hảo trên mọi thiết bị. Với giao diện trực quan, bạn có thể dễ dàng quản lý quy trình làm việc và theo dõi dữ liệu theo thời gian thực.
+                    </p>
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="bi bi-check-circle-fill text-success fs-4 me-3"></i>
+                        <span class="fs-6 fw-semibold text-dark">Tối ưu hóa tốc độ tải trang cực nhanh.</span>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="bi bi-check-circle-fill text-success fs-4 me-3"></i>
+                        <span class="fs-6 fw-semibold text-dark">Tích hợp sẵn hệ thống bảo mật đa lớp.</span>
+                    </div>
+                    <a href="#features" class="btn btn-outline-primary btn-lg fw-semibold">Xem chi tiết tính năng</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Section Danh Sách Tính Năng (Row 3 Cột) -->
+    <section id="features" class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold display-6">Tính Năng Nổi Bật</h2>
+                <p class="text-muted fs-5">Những ưu điểm giúp chúng tôi luôn được tin tưởng lựa chọn</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 p-4 border-0 shadow-sm text-center rounded-4">
+                        <div class="card-body">
+                            <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 70px; height: 70px;">
+                                <i class="bi bi-lightning-charge fs-2"></i>
+                            </div>
+                            <h3 class="h4 card-title fw-bold">Tốc Độ Vượt Trội</h3>
+                            <p class="card-text text-muted">Hệ thống vận hành mượt mà, tối ưu tài nguyên giúp xử lý công việc chỉ trong vài mili-giây.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 p-4 border-0 shadow-sm text-center rounded-4">
+                        <div class="card-body">
+                            <div class="bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 70px; height: 70px;">
+                                <i class="bi bi-shield-lock fs-2"></i>
+                            </div>
+                            <h3 class="h4 card-title fw-bold">Bảo Mật An Toàn</h3>
+                            <p class="card-text text-muted">Dữ liệu người dùng được mã hóa chuẩn quốc tế, đảm bảo an toàn tuyệt đối trước mọi nguy cơ.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 p-4 border-0 shadow-sm text-center rounded-4">
+                        <div class="card-body">
+                            <div class="bg-danger text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 70px; height: 70px;">
+                                <i class="bi bi-headset fs-2"></i>
+                            </div>
+                            <h3 class="h4 card-title fw-bold">Hỗ Trợ 24/7</h3>
+                            <p class="card-text text-muted">Đội ngũ kỹ thuật viên giàu kinh nghiệm sẵn sàng đồng hành và giải đáp thắc mắc bất kỳ lúc nào.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Nút Kêu Gọi Hành Động (CTA) -->
+    <section id="cta" class="bg-primary text-white text-center py-5">
+        <div class="container py-4">
+            <h2 class="display-5 fw-bold mb-3">Sẵn Sàng Trải Nghiệm Dịch Vụ?</h2>
+            <p class="lead mb-4 fs-5">Đăng ký ngay hôm nay để nhận 14 ngày dùng thử hoàn toàn miễn phí!</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#" class="btn btn-light btn-lg text-primary fw-bold px-4 py-3 shadow">Đăng Ký Ngay</a>
+                <a href="#" class="btn btn-outline-light btn-lg fw-bold px-4 py-3">Liên Hệ Tư Vấn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0 text-secondary">&copy; 2026 TechLanding. All rights reserved. | CodeGym Practice Exercise</p>
+        </div>
+    </footer>
+
+    <!-- Nhúng JS Bundle của Bootstrap 5 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
