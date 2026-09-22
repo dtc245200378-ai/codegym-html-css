@@ -1,0 +1,17 @@
+@mixin flex-center($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin card-style {
+  background-color: $card-bg;
+  border-radius: $border-radius;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform $transition-speed;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}

@@ -1,0 +1,20 @@
+.stats-section {
+  background-color: $secondary-color;
+  color: white;
+  padding: 40px 20px;
+  @include flex-center(row, space-around, center);
+
+  .stat-item {
+    @include flex-center(column, center, center);
+
+    .stat-number {
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    .stat-label {
+      font-size: 16px;
+      opacity: 0.9;
+    }
+  }
+}
