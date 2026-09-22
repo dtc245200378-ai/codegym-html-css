@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.example-container {
+    margin-bottom: 30px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.flex-container {
+    display: flex;
+    width: 100%;
+    background-color: #2c3e50;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.flex-item {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+    text-align: center;
+    margin: 5px;
+    border-radius: 4px;
+    flex-grow: 0; /* Mặc định các phần tử không tự mở rộng */
+}
+
+/* 1. Div thứ 2 áp dụng flex-grow: 1 để chiếm toàn bộ khoảng trống còn thừa */
+.item-grow-special {
+    flex-grow: 1;
+    background-color: #e74c3c;
+}
+
+/* 2. So sánh các tỉ lệ flex-grow khác nhau (1 - 2 - 1) */
+.grow-1 {
+    flex-grow: 1;
+    background-color: #2ecc71;
+}
+
+.grow-2 {
+    flex-grow: 2;
+    background-color: #f39c12;
+}

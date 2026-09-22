@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS flex-grow Property</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Thực hành: Thuộc tính flex-grow</h1>
+
+    <div class="example-container">
+        <h2>1. Div thứ 2 áp dụng flex-grow: 1 trong vùng chứa 5 div</h2>
+        <div class="flex-container">
+            <div class="flex-item">Item 1</div>
+            <div class="flex-item item-grow-special">Item 2 (flex-grow: 1)</div>
+            <div class="flex-item">Item 3</div>
+            <div class="flex-item">Item 4</div>
+            <div class="flex-item">Item 5</div>
+        </div>
+    </div>
+
+    <div class="example-container">
+        <h2>2. Tỉ lệ mở rộng flex-grow khác nhau (1 - 2 - 1)</h2>
+        <div class="flex-container">
+            <div class="flex-item grow-1">grow: 1</div>
+            <div class="flex-item grow-2">grow: 2 (Phát triển gấp đôi)</div>
+            <div class="flex-item grow-1">grow: 1</div>
+        </div>
+    </div>
+
+</body>
+</html>
