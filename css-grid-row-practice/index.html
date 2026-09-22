@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid-row Property</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Thực hành: Thuộc tính grid-row</h1>
+
+    <div class="example-container">
+        <h2>1. Sử dụng Row Lines (grid-row: 1 / 3)</h2>
+        <div class="grid-container">
+            <div class="grid-item item-row-lines">Bắt đầu hàng 1 đến hàng 3 (1 / 3)</div>
+            <div class="grid-item">Item 2</div>
+            <div class="grid-item">Item 3</div>
+            <div class="grid-item">Item 4</div>
+            <div class="grid-item">Item 5</div>
+        </div>
+    </div>
+
+    <div class="example-container">
+        <h2>2. Sử dụng Span (grid-row: 1 / span 3)</h2>
+        <div class="grid-container">
+            <div class="grid-item item-row-span">Kéo dài qua 3 hàng (1 / span 3)</div>
+            <div class="grid-item">Item 2</div>
+            <div class="grid-item">Item 3</div>
+            <div class="grid-item">Item 4</div>
+            <div class="grid-item">Item 5</div>
+        </div>
+    </div>
+
+</body>
+</html>
