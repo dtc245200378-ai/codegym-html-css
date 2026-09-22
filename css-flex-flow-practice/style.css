@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.example-container {
+    margin-bottom: 30px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.flex-container {
+    display: flex;
+    width: 100%;
+    background-color: #2c3e50;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.flex-item {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+    text-align: center;
+    margin: 5px;
+    border-radius: 4px;
+    min-width: 120px;
+}
+
+/* 1. flex-flow: row nowrap (Hàng ngang, không xuống dòng - Mặc định) */
+.flex-row-nowrap {
+    flex-flow: row nowrap;
+}
+
+/* 2. flex-flow: row-reverse nowrap (Hàng ngang ngược, không xuống dòng) */
+.flex-row-reverse-nowrap {
+    flex-flow: row-reverse nowrap;
+}
+
+/* 3. flex-flow: row wrap (Hàng ngang, tự động xuống dòng khi tràn) */
+.flex-row-wrap {
+    flex-flow: row wrap;
+}
+
+.flex-row-reverse-nowrap .flex-item {
+    background-color: #e74c3c;
+}
+
+.flex-row-wrap .flex-item {
+    background-color: #2ecc71;
+}
