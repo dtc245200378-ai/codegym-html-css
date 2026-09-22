@@ -1,0 +1,4 @@
+// Hàm tùy chỉnh SASS ví dụ
+@function rem($pixels) {
+  @return ($pixels / 16px) * 1rem;
+}
