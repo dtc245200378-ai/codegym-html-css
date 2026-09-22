@@ -1,0 +1,13 @@
+{
+  "name": "sass-installation-cli-practice",
+  "version": "1.0.0",
+  "description": "Hướng dẫn cài đặt SASS bằng npm và SASS CLI",
+  "main": "index.html",
+  "scripts": {
+    "build:sass": "sass scss/style.scss css/style.css",
+    "watch:sass": "sass scss/style.scss css/style.css --watch"
+  },
+  "keywords": ["sass", "scss", "cli", "npm"],
+  "author": "CodeGym Student",
+  "license": "ISC"
+}

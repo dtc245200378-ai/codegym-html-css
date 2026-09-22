@@ -1,0 +1,65 @@
+// Khai báo biến
+$primary-color: #3498db;
+$accent-color: #e74c3c;
+$dark-bg: #2c3e50;
+$font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+// Khai báo Mixin
+@mixin card-box {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: $font-family;
+  background-color: #f4f6f7;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: $dark-bg;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+
+  h1 {
+    margin: 0 0 10px;
+    font-size: 2rem;
+  }
+
+  p {
+    color: $primary-color;
+    margin: 0;
+  }
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+
+  .info-card {
+    background-color: white;
+    @include card-box;
+    border-left: 5px solid $accent-color;
+
+    h2 {
+      color: $dark-bg;
+      margin-top: 0;
+    }
+
+    ul {
+      line-height: 1.8;
+      li {
+        code {
+          background-color: #f0f0f0;
+          padding: 2px 6px;
+          border-radius: 4px;
+          color: #d63384;
+        }
+      }
+    }
+  }
+}
