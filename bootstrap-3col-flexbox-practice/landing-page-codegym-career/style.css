@@ -1,0 +1,29 @@
+html,
+body,
+header,
+.view {
+    height: 100%;
+}
+
+.intro-2 {
+    background: url("https://mdbootstrap.com/img/Photos/Others/img%20(42).jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.hoverable {
+    transition: all 0.3s ease-in-out;
+}
+
+.hoverable:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+@media (max-width: 768px) {
+    .view {
+        height: auto;
+        min-height: 100vh;
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+}
