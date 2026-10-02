@@ -1,5 +1,3 @@
-.card {
-  border: 1px solid $border-color;
-  padding: 20px;
-  @include box-shadow;
+.label-danger { // Thay .label-danger bằng class thực tế trong HTML của bạn
+    background-color: $color-primary; // Sử dụng màu bậc 1
 }

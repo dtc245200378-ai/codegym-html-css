@@ -1,5 +1,13 @@
 body {
-  font-family: Arial, sans-serif;
-  color: $text-color;
-  background: $background-color;
+    background-color: $color-level-4; // Chuyển nền thành màu bậc 4
+    color: $text-color;               // Đổi màu chữ thành đen
+}
+
+footer {
+    background-color: $color-level-9;
+
+    .panel-heading {
+        background-color: $color-level-9;
+        border-color: transparent;
+    }
 }
