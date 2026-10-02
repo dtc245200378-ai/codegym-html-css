@@ -1,0 +1,108 @@
+/* Thiết lập cơ bản */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    min-height: 1500px; /* Tạo chiều cao để kiểm tra cuộn trang */
+    padding-top: 70px;  /* Đẩy nội dung xuống bằng chiều cao của fixed header */
+}
+
+/* Header cố định */
+.main-header {
+    position: fixed;   /* Cố định header */
+    top: 0;            /* Dính lên mép trên */
+    left: 0;           /* Dính sang mép trái */
+    width: 100%;       /* Phủ toàn bộ chiều rộng màn hình */
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;     /* Căn chỉnh tiêu đề và menu bằng Flexbox */
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;     /* Luôn nằm trên các phần tử khác khi cuộn */
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.main-header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-header nav ul li {
+    margin-left: 20px;
+}
+
+.main-header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-header nav ul li a:hover {
+    color: #f0a500;
+}
+
+/* Container cho bố cục 3 cột (Flexbox) */
+.page-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    gap: 20px;
+}
+
+/* Định dạng các Sidebar */
+.sidebar {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;    /* Không co lại khi màn hình hẹp */
+}
+
+.left-sidebar {
+    width: 200px;
+}
+
+.right-sidebar {
+    width: 200px;
+}
+
+/* Định dạng khu vực Nội dung chính */
+.main-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;      /* Tự động chiếm hết khoảng trống còn lại giữa 2 sidebar */
+}
+
+/* Kiểu dáng phụ cho nội dung bên trong sidebar */
+.sidebar h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+    color: #555;
+}
